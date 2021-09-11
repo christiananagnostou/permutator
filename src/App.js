@@ -9,7 +9,7 @@ function App() {
   const [videos, setVideos] = useState([]);
   const [inputVideo, setInputVideo] = useState({ title: "", fixed: false });
   const [permutations, setPermutations] = useState([]);
-  const [displayCount, setDisplayCount] = useState(1000);
+  const [displayCount, setDisplayCount] = useState(100);
 
   const addVideo = (e) => {
     e.preventDefault();
@@ -85,6 +85,7 @@ function App() {
               required={true}
               value={inputVideo.title}
               onChange={(e) => setInputVideo({ ...inputVideo, title: e.target.value })}
+              onFocus={() => setDisplayCount(100)}
             />
           </div>
           <div>
@@ -148,10 +149,8 @@ function App() {
           className={displayCount === permutations.length ? "btn-highlight" : ""}
         >
           All
-          {displayCount === permutations.length && (
-            <p>Your browser might not like you after this.</p>
-          )}
         </button>
+        <span>{" <- be careful"}</span>
       </div>
 
       {Boolean(permutations.length) && (

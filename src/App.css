@@ -93,6 +93,10 @@
   margin: 1rem auto;
 }
 
-.btn-highlight{
-  background: rgb(215, 250, 215)
+.btn-highlight {
+  background: rgb(215, 250, 215);
+}
+
+.list-controls span {
+  font-size: 0.6rem;
 }
