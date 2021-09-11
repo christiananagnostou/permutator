@@ -7,7 +7,7 @@
 3.  run `npm i`
 4.  run `npm start`
 
-Now the app is running in development mode
+Now the app is running in development mode.\
 Open [http://localhost:3000](http://localhost:3000)
 
 ## break your computer
