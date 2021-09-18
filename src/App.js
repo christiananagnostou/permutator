@@ -60,8 +60,6 @@ function App() {
 
     const CSV = encodeURI("data:text/csv;charset=utf-8," + text);
 
-    console.log(CSV);
-
     window.open(CSV);
 
     var hiddenElement = document.createElement("a");
